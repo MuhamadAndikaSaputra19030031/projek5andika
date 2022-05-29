@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/backgroud">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/L_img_1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/L_txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/L_img_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Welcome Back !"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/L_img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/L_txt_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/login" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/L_img_2"
+        android:padding="30dp"
+        android:id="@+id/ly_1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Email Anda"
+            android:padding="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/edt_email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm Password"
+            android:padding="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/edt_conf_password"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="300dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_1"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not have an account?"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Register"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"
+            android:textColor="@color/SecondaryColor"
+            android:id="@+id/txt_rigister"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
